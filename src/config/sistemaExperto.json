@@ -1,0 +1,463 @@
+{
+  "configuracion": {
+    "nombre": "MindCheck",
+    "version": "1.0.0",
+    "idioma": "es",
+    "periodoReferencia": "Durante las últimas 2 semanas",
+    "lineaAyuda": {
+      "nombre": "Línea de Emergencia (ajústala a tu país, ej. CVV 188 en Brasil)",
+      "telefono": "911"
+    },
+    "instrucciones": "Responde pensando en cómo te has sentido durante las últimas 2 semanas. No hay respuestas correctas ni incorrectas: sé honesto contigo mismo. Este test es orientativo y no sustituye una evaluación profesional."
+  },
+  "dimensiones": [
+    { "clave": "DEP", "nombre": "Depresión", "descripcion": "Ánimo, energía y afecto" },
+    { "clave": "ANX", "nombre": "Ansiedad", "descripcion": "Nerviosismo y preocupación" },
+    { "clave": "STR", "nombre": "Estrés", "descripcion": "Sobrecarga y tensión" }
+  ],
+  "preguntas": [
+    {
+      "id": "q1",
+      "dimension": "DEP",
+      "pregunta": "En las últimas 2 semanas, ¿con qué frecuencia has sentido poco interés o placer al hacer las cosas?",
+      "imagenUrl": "https://images.unsplash.com/photo-1557682250-33bd709cbe85?q=80&w=800&auto=format&fit=crop",
+      "opciones": [
+        { "valor": 0, "etiqueta": "Nada en absoluto" },
+        { "valor": 1, "etiqueta": "Varios días" },
+        { "valor": 2, "etiqueta": "Más de la mitad de los días" },
+        { "valor": 3, "etiqueta": "Casi todos los días" }
+      ],
+      "pesoPuntuacion": 1,
+      "soportaVoz": true,
+      "esRiesgo": false
+    },
+    {
+      "id": "q2",
+      "dimension": "DEP",
+      "pregunta": "En las últimas 2 semanas, ¿con qué frecuencia te has sentido decaído, deprimido o sin esperanza?",
+      "imagenUrl": "https://images.unsplash.com/photo-1552083375-1447ce886485?q=80&w=800&auto=format&fit=crop",
+      "opciones": [
+        { "valor": 0, "etiqueta": "Nada en absoluto" },
+        { "valor": 1, "etiqueta": "Varios días" },
+        { "valor": 2, "etiqueta": "Más de la mitad de los días" },
+        { "valor": 3, "etiqueta": "Casi todos los días" }
+      ],
+      "pesoPuntuacion": 1,
+      "soportaVoz": true,
+      "esRiesgo": false
+    },
+    {
+      "id": "q3",
+      "dimension": "DEP",
+      "pregunta": "En las últimas 2 semanas, ¿con qué frecuencia has tenido problemas para dormir, o duermes en exceso?",
+      "imagenUrl": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=800&auto=format&fit=crop",
+      "opciones": [
+        { "valor": 0, "etiqueta": "Nada en absoluto" },
+        { "valor": 1, "etiqueta": "Varios días" },
+        { "valor": 2, "etiqueta": "Más de la mitad de los días" },
+        { "valor": 3, "etiqueta": "Casi todos los días" }
+      ],
+      "pesoPuntuacion": 1,
+      "soportaVoz": true,
+      "esRiesgo": false
+    },
+    {
+      "id": "q4",
+      "dimension": "DEP",
+      "pregunta": "En las últimas 2 semanas, ¿con qué frecuencia has sentido falta de energía o cansancio extremo?",
+      "imagenUrl": "https://images.unsplash.com/photo-1579546929662-711aa81148cf?q=80&w=800&auto=format&fit=crop",
+      "opciones": [
+        { "valor": 0, "etiqueta": "Nada en absoluto" },
+        { "valor": 1, "etiqueta": "Varios días" },
+        { "valor": 2, "etiqueta": "Más de la mitad de los días" },
+        { "valor": 3, "etiqueta": "Casi todos los días" }
+      ],
+      "pesoPuntuacion": 1,
+      "soportaVoz": true,
+      "esRiesgo": false
+    },
+    {
+      "id": "q5",
+      "dimension": "DEP",
+      "pregunta": "En el último mes, ¿con qué frecuencia has tenido pensamientos de hacerte daño o de que estarías mejor muerto?",
+      "imagenUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?q=80&w=800&auto=format&fit=crop",
+      "opciones": [
+        { "valor": 0, "etiqueta": "No, en absoluto" },
+        { "valor": 1, "etiqueta": "Varios días" },
+        { "valor": 2, "etiqueta": "Más de la mitad de los días" },
+        { "valor": 3, "etiqueta": "Casi todos los días" }
+      ],
+      "pesoPuntuacion": 0,
+      "soportaVoz": true,
+      "esRiesgo": true,
+      "umbralRiesgo": 1
+    },
+    {
+      "id": "q6",
+      "dimension": "ANX",
+      "pregunta": "En las últimas 2 semanas, ¿con qué frecuencia te has sentido nervioso, ansioso o al límite?",
+      "imagenUrl": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=800&auto=format&fit=crop",
+      "opciones": [
+        { "valor": 0, "etiqueta": "Nada en absoluto" },
+        { "valor": 1, "etiqueta": "Varios días" },
+        { "valor": 2, "etiqueta": "Más de la mitad de los días" },
+        { "valor": 3, "etiqueta": "Casi todos los días" }
+      ],
+      "pesoPuntuacion": 1,
+      "soportaVoz": true,
+      "esRiesgo": false
+    },
+    {
+      "id": "q7",
+      "dimension": "ANX",
+      "pregunta": "En las últimas 2 semanas, ¿con qué frecuencia has tenido dificultad para relajarte o calmar la mente?",
+      "imagenUrl": "https://images.unsplash.com/photo-1538635546732-6b3f4e9703f3?q=80&w=800&auto=format&fit=crop",
+      "opciones": [
+        { "valor": 0, "etiqueta": "Nada en absoluto" },
+        { "valor": 1, "etiqueta": "Varios días" },
+        { "valor": 2, "etiqueta": "Más de la mitad de los días" },
+        { "valor": 3, "etiqueta": "Casi todos los días" }
+      ],
+      "pesoPuntuacion": 1,
+      "soportaVoz": true,
+      "esRiesgo": false
+    },
+    {
+      "id": "q8",
+      "dimension": "ANX",
+      "pregunta": "En las últimas 2 semanas, ¿con qué frecuencia te has preocupado en exceso por distintas cosas?",
+      "imagenUrl": "https://images.unsplash.com/photo-1617140237060-d09a58ba8edd?q=80&w=800&auto=format&fit=crop",
+      "opciones": [
+        { "valor": 0, "etiqueta": "Nada en absoluto" },
+        { "valor": 1, "etiqueta": "Varios días" },
+        { "valor": 2, "etiqueta": "Más de la mitad de los días" },
+        { "valor": 3, "etiqueta": "Casi todos los días" }
+      ],
+      "pesoPuntuacion": 1,
+      "soportaVoz": true,
+      "esRiesgo": false
+    },
+    {
+      "id": "q9",
+      "dimension": "ANX",
+      "pregunta": "En las últimas 2 semanas, ¿con qué frecuencia has sentido miedo de que algo terrible vaya a suceder?",
+      "imagenUrl": "https://images.unsplash.com/photo-1508614939334-2543a1e5357c?q=80&w=800&auto=format&fit=crop",
+      "opciones": [
+        { "valor": 0, "etiqueta": "Nada en absoluto" },
+        { "valor": 1, "etiqueta": "Varios días" },
+        { "valor": 2, "etiqueta": "Más de la mitad de los días" },
+        { "valor": 3, "etiqueta": "Casi todos los días" }
+      ],
+      "pesoPuntuacion": 1,
+      "soportaVoz": true,
+      "esRiesgo": false
+    },
+    {
+      "id": "q10",
+      "dimension": "STR",
+      "pregunta": "En las últimas 2 semanas, ¿con qué frecuencia te has sentido abrumado por tus responsabilidades del día a día?",
+      "imagenUrl": "https://images.unsplash.com/photo-1597993344244-6f1f7c639a58?q=80&w=800&auto=format&fit=crop",
+      "opciones": [
+        { "valor": 0, "etiqueta": "Nada en absoluto" },
+        { "valor": 1, "etiqueta": "Varios días" },
+        { "valor": 2, "etiqueta": "Más de la mitad de los días" },
+        { "valor": 3, "etiqueta": "Casi todos los días" }
+      ],
+      "pesoPuntuacion": 1,
+      "soportaVoz": true,
+      "esRiesgo": false
+    },
+    {
+      "id": "q11",
+      "dimension": "STR",
+      "pregunta": "En las últimas 2 semanas, ¿con qué frecuencia te has sentido irritable o con ganas de explotar?",
+      "imagenUrl": "https://images.unsplash.com/photo-1550684376-efcbd6e3f031?q=80&w=800&auto=format&fit=crop",
+      "opciones": [
+        { "valor": 0, "etiqueta": "Nada en absoluto" },
+        { "valor": 1, "etiqueta": "Varios días" },
+        { "valor": 2, "etiqueta": "Más de la mitad de los días" },
+        { "valor": 3, "etiqueta": "Casi todos los días" }
+      ],
+      "pesoPuntuacion": 1,
+      "soportaVoz": true,
+      "esRiesgo": false
+    },
+    {
+      "id": "q12",
+      "dimension": "STR",
+      "pregunta": "En las últimas 2 semanas, ¿con qué frecuencia has sentido tensión física (mandíbula, cuello, hombros o estómago)?",
+      "imagenUrl": "https://images.unsplash.com/photo-1536964493475-c050a0a5520d?q=80&w=800&auto=format&fit=crop",
+      "opciones": [
+        { "valor": 0, "etiqueta": "Nada en absoluto" },
+        { "valor": 1, "etiqueta": "Varios días" },
+        { "valor": 2, "etiqueta": "Más de la mitad de los días" },
+        { "valor": 3, "etiqueta": "Casi todos los días" }
+      ],
+      "pesoPuntuacion": 1,
+      "soportaVoz": true,
+      "esRiesgo": false
+    },
+    {
+      "id": "q13",
+      "dimension": "STR",
+      "pregunta": "En las últimas 2 semanas, ¿con qué frecuencia has tenido dificultad para concentrarte por pensamientos que no se detienen?",
+      "imagenUrl": "https://images.unsplash.com/photo-1505352545939-a5ab34b49045?q=80&w=800&auto=format&fit=crop",
+      "opciones": [
+        { "valor": 0, "etiqueta": "Nada en absoluto" },
+        { "valor": 1, "etiqueta": "Varios días" },
+        { "valor": 2, "etiqueta": "Más de la mitad de los días" },
+        { "valor": 3, "etiqueta": "Casi todos los días" }
+      ],
+      "pesoPuntuacion": 1,
+      "soportaVoz": true,
+      "esRiesgo": false
+    }
+  ],
+  "reglas": [
+    {
+      "id": "R01",
+      "descripcion": "Riesgo alto: se detectó ideación suicida o de autolesión.",
+      "prioridad": 1000,
+      "condicion": { "tipo": "flag", "flag": "riesgoAlto" },
+      "diagnostico": "RIESGO_ALTO"
+    },
+    {
+      "id": "R02",
+      "descripcion": "Todas las dimensiones dentro de rango bajo.",
+      "prioridad": 900,
+      "condicion": { "tipo": "todasBajas", "max": 4 },
+      "diagnostico": "NORMAL"
+    },
+    {
+      "id": "R03",
+      "descripcion": "La depresión domina el cuadro y supera el umbral severo.",
+      "prioridad": 880,
+      "condicion": { "tipo": "dominante", "dimension": "DEP", "min": 9 },
+      "diagnostico": "DEPRESION_SEVERA"
+    },
+    {
+      "id": "R04",
+      "descripcion": "La ansiedad domina el cuadro y supera el umbral severo.",
+      "prioridad": 870,
+      "condicion": { "tipo": "dominante", "dimension": "ANX", "min": 9 },
+      "diagnostico": "ANSIEDAD_SEVERA"
+    },
+    {
+      "id": "R05",
+      "descripcion": "El estrés domina el cuadro y supera el umbral severo.",
+      "prioridad": 860,
+      "condicion": { "tipo": "dominante", "dimension": "STR", "min": 9 },
+      "diagnostico": "ESTRES_SEVERO"
+    },
+    {
+      "id": "R06",
+      "descripcion": "Ansiedad y depresión elevadas de forma combinada.",
+      "prioridad": 850,
+      "condicion": { "tipo": "mayorIgual", "dimensiones": ["DEP", "ANX"], "min": 5 },
+      "diagnostico": "ANSIEDAD_DEPRESION"
+    },
+    {
+      "id": "R07",
+      "descripcion": "Depresión moderada dominante.",
+      "prioridad": 700,
+      "condicion": { "tipo": "dominante", "dimension": "DEP", "min": 5 },
+      "diagnostico": "DEPRESION_MODERADA"
+    },
+    {
+      "id": "R08",
+      "descripcion": "Ansiedad moderada dominante.",
+      "prioridad": 690,
+      "condicion": { "tipo": "dominante", "dimension": "ANX", "min": 5 },
+      "diagnostico": "ANSIEDAD_MODERADA"
+    },
+    {
+      "id": "R09",
+      "descripcion": "Estrés elevado dominante.",
+      "prioridad": 680,
+      "condicion": { "tipo": "dominante", "dimension": "STR", "min": 5 },
+      "diagnostico": "ESTRES_ELEVADO"
+    },
+    {
+      "id": "R10",
+      "descripcion": "Depresión leve dominante.",
+      "prioridad": 600,
+      "condicion": { "tipo": "dominante", "dimension": "DEP", "min": 1 },
+      "diagnostico": "DEPRESION_LEVE"
+    },
+    {
+      "id": "R11",
+      "descripcion": "Ansiedad leve dominante.",
+      "prioridad": 590,
+      "condicion": { "tipo": "dominante", "dimension": "ANX", "min": 1 },
+      "diagnostico": "ANSIEDAD_LEVE"
+    },
+    {
+      "id": "R12",
+      "descripcion": "Estrés leve dominante.",
+      "prioridad": 580,
+      "condicion": { "tipo": "dominante", "dimension": "STR", "min": 1 },
+      "diagnostico": "ESTRES_LEVE"
+    },
+    {
+      "id": "R13",
+      "descripcion": "Regla de seguridad por defecto.",
+      "prioridad": 0,
+      "condicion": { "tipo": "default" },
+      "diagnostico": "NORMAL"
+    }
+  ],
+  "diagnosticos": [
+    {
+      "codigo": "RIESGO_ALTO",
+      "nombre": "Riesgo Alto",
+      "descripcion": "Se han detectado señales que requieren atención inmediata. No estás solo: contacta ahora mismo con la línea de emergencia o con alguien de confianza.",
+      "nivel": "rojo",
+      "emergencia": true,
+      "recomendaciones": [
+        "Llama ahora mismo a la línea de emergencia.",
+        "No te quedes solo: avisa a una persona de confianza.",
+        "Retira cualquier medio que pudiera hacerte daño de tu entorno.",
+        "Busca acompañamiento profesional lo antes posible."
+      ]
+    },
+    {
+      "codigo": "NORMAL",
+      "nombre": "Estado de ánimo estable",
+      "descripcion": "Tus respuestas indican un estado de ánimo dentro de rangos habituales. Mantén tus hábitos saludables.",
+      "nivel": "verde",
+      "emergencia": false,
+      "recomendaciones": [
+        "Mantén una rutina de sueño regular.",
+        "Sigue haciendo ejercicio y actividades que disfrutas.",
+        "Conserva el contacto social con personas que te aportan."
+      ]
+    },
+    {
+      "codigo": "DEPRESION_LEVE",
+      "nombre": "Depresión Leve",
+      "descripcion": "Observas algunos síntomas depresivos bajos. Con pequeños cambios suele mejorar; sigue observando cómo te sientes.",
+      "nivel": "verde",
+      "emergencia": false,
+      "recomendaciones": [
+        "Intenta mantener actividad física al menos 3 veces por semana.",
+        "Establece una rutina diaria y metas pequeñas y realistas.",
+        "Comparte cómo te sientes con alguien de confianza."
+      ]
+    },
+    {
+      "codigo": "DEPRESION_MODERADA",
+      "nombre": "Depresión Moderada",
+      "descripcion": "Hay síntomas depresivos que afectan tu día a día. Es recomendable buscar apoyo profesional.",
+      "nivel": "amarillo",
+      "emergencia": false,
+      "recomendaciones": [
+        "Consulta a un psicólogo o médico de cabecera para valoración.",
+        "Evita el aislamiento: mantén contacto social regular.",
+        "Prioriza el descanso y evita la automedicación.",
+        "Lleva un registro de tu ánimo durante las próximas semanas."
+      ]
+    },
+    {
+      "codigo": "DEPRESION_SEVERA",
+      "nombre": "Depresión Severa",
+      "descripcion": "Los síntomas depresivos son intensos y frecuentes. Busca atención profesional a la brevedad.",
+      "nivel": "rojo",
+      "emergencia": false,
+      "recomendaciones": [
+        "Busca atención profesional lo antes posible (psicología/psiquiatría).",
+        "Pide ayuda a una persona de confianza para acompañarte en el proceso.",
+        "No manejes decisiones importantes mientras estés muy decaído.",
+        "Sigue los controles y recomendaciones de tu profesional de salud."
+      ]
+    },
+    {
+      "codigo": "ANSIEDAD_LEVE",
+      "nombre": "Ansiedad Leve",
+      "descripcion": "Hay algo de nerviosismo o preocupación, pero dentro de rangos manejables. Practicar autocuidado suele bastar.",
+      "nivel": "verde",
+      "emergencia": false,
+      "recomendaciones": [
+        "Practica respiración profunda 5 minutos al día.",
+        "Reduce el consumo de cafeína y estimulantes.",
+        "Identifica tus principales fuentes de preocupación y ordénalas."
+      ]
+    },
+    {
+      "codigo": "ANSIEDAD_MODERADA",
+      "nombre": "Ansiedad Moderada",
+      "descripcion": "La preocupación o el nerviosismo interfieren con tu día a día. Conviene buscar apoyo profesional.",
+      "nivel": "amarillo",
+      "emergencia": false,
+      "recomendaciones": [
+        "Considera terapia psicológica (TCC suele ser muy eficaz).",
+        "Prueba técnicas de relajación y mindfulness a diario.",
+        "Evita autodiagnosticarte y evita consumir alcohol para 'calmar los nervios'.",
+        "Habla con tu médico si los síntomas persisten más de 2 semanas."
+      ]
+    },
+    {
+      "codigo": "ANSIEDAD_SEVERA",
+      "nombre": "Ansiedad Severa",
+      "descripcion": "Los síntomas de ansiedad son intensos y frecuentes. Busca atención profesional a la brevedad.",
+      "nivel": "rojo",
+      "emergencia": false,
+      "recomendaciones": [
+        "Busca evaluación profesional lo antes posible.",
+        "Practica técnicas de anclaje si sientes una crisis de pánico.",
+        "Evita situaciones de riesgo y usa tu red de apoyo.",
+        "Sigue el tratamiento indicado por tu profesional de salud."
+      ]
+    },
+    {
+      "codigo": "ESTRES_LEVE",
+      "nombre": "Estrés Leve",
+      "descripcion": "Hay una carga de tensión manejable. Pequeños hábitos de recuperación te ayudarán.",
+      "nivel": "verde",
+      "emergencia": false,
+      "recomendaciones": [
+        "Incorpora pausas activas durante tu jornada.",
+        "Programa tiempo de descanso y ocio real.",
+        "Mantén una hidratación y alimentación adecuadas."
+      ]
+    },
+    {
+      "codigo": "ESTRES_ELEVADO",
+      "nombre": "Estrés Elevado",
+      "descripcion": "La sobrecarga es alta y puede afectar tu salud. Es momento de priorizarte.",
+      "nivel": "amarillo",
+      "emergencia": false,
+      "recomendaciones": [
+        "Reduce o delega responsabilidades que puedas.",
+        "Establece límites claros en el trabajo y en casa.",
+        "Duerme 7-8 horas y practica ejercicio moderado.",
+        "Considera técnicas de gestión del estrés con un profesional."
+      ]
+    },
+    {
+      "codigo": "ESTRES_SEVERO",
+      "nombre": "Estrés Severo",
+      "descripcion": "El nivel de tensión es muy alto y sostenido. Tu salud física y mental requiere atención.",
+      "nivel": "rojo",
+      "emergencia": false,
+      "recomendaciones": [
+        "Busca apoyo profesional para manejo del estrés.",
+        "Tómate tiempo libre si es posible y desconecta del trabajo.",
+        "Practica técnicas de relajación varias veces al día.",
+        "Vigila síntomas físicos (tensión, insomnio, dolor) y consúltalos."
+      ]
+    },
+    {
+      "codigo": "ANSIEDAD_DEPRESION",
+      "nombre": "Ansiedad con Componente Depresivo",
+      "descripcion": "Coexisten síntomas de ansiedad y de ánimo bajo. Es el cuadro más frecuente y tratable con apoyo profesional.",
+      "nivel": "amarillo",
+      "emergencia": false,
+      "recomendaciones": [
+        "Busca evaluación profesional: la terapia cognitivo-conductual es muy eficaz.",
+        "Cuida el sueño, la alimentación y el ejercicio.",
+        "Evita el aislamiento social.",
+        "Haz seguimiento de tu estado de ánimo para detectar cambios."
+      ]
+    }
+  ]
+}
